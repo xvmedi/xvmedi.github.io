@@ -145,7 +145,7 @@ input, select, textarea {
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.65;
-		width: fit-content;
+		
 	}
 
 	a {
@@ -275,7 +275,6 @@ input, select, textarea {
 		font-family: "Courier New", monospace;
 		font-size: 0.9rem;
 		margin: 0 0 2rem 0;
-		width: fit-content;
 	}
 
 		pre code {
