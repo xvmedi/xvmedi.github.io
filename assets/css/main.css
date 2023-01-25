@@ -662,6 +662,16 @@ input, select, textarea {
 		position: relative;
 	}
 
+	.photos img{
+		width:15%;
+		aspect-ratio: 3/2;
+		object-fit: contain;
+		/* mix-blend-mode: color-burn; */
+	}
+
+
+
+
 		.image:before {
 			pointer-events: none;
 			background-image: url("../../images/overlay.png");
