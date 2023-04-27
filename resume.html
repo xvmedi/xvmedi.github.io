@@ -797,7 +797,7 @@
                 <div class="form">
                     <form action="POST">
                         <input type="text" placeholder="Name" id="name" autocomplete="off">
-                        <!-- <input type="email" placeholder="E-mail" id="email" autocomplete="off"> -->
+                        <input type="email" placeholder="E-mail" id="email" autocomplete="off">
                         <input type="text" placeholder="Subject" id="subject" autocomplete="off">
                         <textarea id="message" placeholder="Message" cols="30" rows="10"></textarea>
                         <center><button id="btnEmail">Send</button></center>
@@ -827,10 +827,10 @@
         btn.addEventListener('click', function (e) {
             e.preventDefault()
             var name = document.getElementById('name').value;
-            // var email = document.getElementById('email').value;
+            var email = document.getElementById('email').value;
             var subject = document.getElementById('subject').value;
             var message = document.getElementById('message').value;
-            var body= 'name: ' +name  + '<br/> subject : ' +subject +
+            var body= 'name: ' +name  + 'Email: ' +email  +'<br/> subject : ' +subject +
             '<br/> message : ' +message;
 
             Email.send({
@@ -838,7 +838,7 @@
                 Username: "cristovas00@gmail.com",
                 Password: "A092D7062F09EF5AFB45D00A8DBFB73C4767",
                 To: 'cristovas00@gmail.com',
-                From: "cristovas00@gmail.com",
+                From: email,
                 Subject: subject,
                 Body: body
             }).then(
